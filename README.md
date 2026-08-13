@@ -50,6 +50,8 @@ rules:
 
 ## Testing
 
+Testing limitation: Connectivity between the VirtualBox Ubuntu VM and the WSL environment was tested. ICMP connectivity was successful, but TCP port 80 could not be reached even when UFW was temporarily disabled. Therefore, the TCP test could not be used to isolate the UFW rule. The active UFW configuration was verified using sudo ufw status verbose.
+
 A separate Ubuntu virtual machine was used as the testing
 machine. Network connectivity and firewall behavior were
 tested from the separate machine.
